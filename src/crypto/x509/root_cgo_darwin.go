@@ -148,7 +148,7 @@ int FetchPEMRoots(CFDataRef *pemRoots, CFDataRef *untrustedPemRoots) {
 					// trust me like a root!
 					// extrapolated from the Discussion section in the Obj-C documentation here:
 					// https://developer.apple.com/documentation/security/1400261-sectrustsettingscopytrustsetting?language=objc
-					trustAsRoot = 1
+					trustAsRoot = 1;
 				}
 				for (CFIndex k = 0; k < CFArrayGetCount(trustSettings); k++) {
 					CFNumberRef cfNum;
